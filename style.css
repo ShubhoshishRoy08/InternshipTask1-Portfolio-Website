@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #f5f5dc;
+}
+body{
+    background-color: antiquewhite;
+}
+header{
+    height: 600px;
+    width: 100%;
+    /* border: 2px solid black; */
+    background-image: url("bg1.jpg");
+    background-size:cover;
+}
+
+nav ul{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li{
+    list-style-type: none;
+    
+}
+
+a{
+    text-decoration: none;
+    margin: 15px;
+    font-size: 30px;
+    font-family: 'Dancing Script', cursive;
+}
+
+a:hover{
+    margin: 20px;
+    
+}
+
+#main{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content:space-around;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+
+#photo{
+    /* display: inline-block;
+    margin-left: 70%;
+    margin-top: 100px; */
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    background-image: url("photo.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -0px;
+}
+
+#text{
+    /* height: 300px;
+    width: 300px; */
+    margin-top: 20px;
+    margin-left: 200px;
+    
+    
+    
+}
+.line{
+    font-size: 70px;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* ---------------about me--------------- */
+
+#about{
+    padding:80px 0;
+    color:#ababab
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img {
+    margin-left: 184px;
+    /* height: 431px; */
+    width: 304px;
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(242, 20, 57);
+    font-family: 'Dancing Script', cursive;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content:'';
+    width:0;
+    height:3px;
+    background: #ff004f;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #b54769;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ---------------------services----------------- */
+#service h1{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 600;
+    color: rgb(242, 20, 57);
+    font-family: 'Dancing Script', cursive;
+}
+.horizontal-line {
+    width: 50%; /* Set the desired width */
+    height: 2px; /* Set the desired height/thickness */
+    background-color: #000; /* Set the desired color */
+    margin: 0 auto; /* Center the line horizontally */
+    display: block; /* Ensure it's a block-level element to take the full width */
+  }
+.sercontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 5px;
+}
+.sercard{
+    margin-top: 10px;
+    /* border: 2px solid black; */
+    border-radius: 5px;
+    /* height: 300px; */
+    width: 300px;
+}
+.sercard:hover{
+    width: 400px;
+}
+.serimage{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 250px;
+    overflow: hidden;
+}
+.serimage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sercontent h4{
+    font-size: 50px;
+    color: #ff004f;
+    font-family: 'Dancing Script', cursive;
+
+}
+.sercontent p{
+    font-size: medium;
+    color: black;
+}
+
+/* -----------------------contact us-------------- */
+.contact-form {
+    background-color: rgba(242, 215, 180, 0.882);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+input,
+textarea,
+button {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.contact-form form label,input{
+    color: #000;
+    font-family: 'Dancing Script', cursive;
+}
+.contact-form h2{
+    color: #000;
+    font-family: 'Dancing Script', cursive;
+}
+.contact-form form button{
+    color: #000;
+    font-family: 'Dancing Script', cursive;
+}
+
+button {
+    background-color:rgba(242, 215, 180, 0.882);
+    /* color: white; */
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: antiquewhite;
+}
+
+/* -----------------footer------------ */
+footer{
+    background-color: antiquewhite;
+    height: 50px;
+    width: 100%;
+    
+    text-align: center;
+}
